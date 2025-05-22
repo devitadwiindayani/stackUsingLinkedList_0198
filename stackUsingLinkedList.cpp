@@ -45,8 +45,27 @@ public:
             cout << "Stack is empty." << endl;
         }
 
-        Node* temp = top; // Create a temporary pointer to the top node
-        top = top->next; // Update the top pointer to the next node
+        Node *temp = top; // Create a temporary pointer to the top node
+        top = top->next;  // Update the top pointer to the next node
         cout << "Popped value: " << top->data << endl;
+    }
+
+    // Peek/Top operation: retrieve the value of the topmost element without removing
+    void peek()
+    {
+        if (top == NULL)
+        {
+            cout << "List is empty." << endl;
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        } // Return the value of the top node
     }
 }
