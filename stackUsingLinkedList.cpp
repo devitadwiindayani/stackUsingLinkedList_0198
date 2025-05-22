@@ -83,7 +83,7 @@ int main()
     int choice = 0;
     int value;
 
-    while (choice !=5)
+    while (choice != 5)
     {
         cout << "1. Push\n";
         cout << "2. Pop\n";
@@ -91,10 +91,9 @@ int main()
         cout << "4. Exit\n";
         cout << "Enter your choice:";
         cin >> choice;
-    }
 
-    switch (choice)
-    {
+        switch (choice)
+        {
         case 1:
             cout << "Enter the value to push: ";
             cin >> value;
@@ -126,5 +125,7 @@ int main()
         default:
             cout << "Invalid choice Try again. " << endl;
             break;
+        }
     }
+    return 0;
 }
