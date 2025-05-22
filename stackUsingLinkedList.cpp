@@ -48,6 +48,7 @@ public:
         Node *temp = top; // Create a temporary pointer to the top node
         top = top->next;  // Update the top pointer to the next node
         cout << "Popped value: " << top->data << endl;
+        delete temp;
     }
 
     // Peek/Top operation: retrieve the value of the topmost element without removing
