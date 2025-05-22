@@ -115,5 +115,10 @@ int main()
             {
                 stack.peek(); // Get the value to thr top element
             }
+            else
+            {
+                cout << "Stack is empty. No top value." << endl;
+            }
+            break;
     }
 }
